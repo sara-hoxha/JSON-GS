@@ -1,6 +1,6 @@
 // doGet
 function testGS(){
-    const url = "https://script.google.com/macros/s/AKfycbyLulAPhfHyD3QJqX0hRYcTG4zY5BIzFVFXTzux2MO5vYfNYn7WgIrFhpA4B8t0Z-RcNA/exec"
+    const url = "https://script.google.com/macros/s/AKfycbzttiXyuagTRdrZN7MJQdZBBoiExRHQMwNJZDXFUvFfh18Xb-H5VD3PsZmDW_WvS45y/exec"
 
     fetch(url)
         .then(d => d.json())
@@ -15,7 +15,7 @@ document.getElementById("btn").addEventListener("click", testGS);
 
 // doPost
 function addGS(){
-    const url = "https://script.google.com/macros/s/AKfycbyLulAPhfHyD3QJqX0hRYcTG4zY5BIzFVFXTzux2MO5vYfNYn7WgIrFhpA4B8t0Z-RcNA/exec"
+    const url = "https://script.google.com/macros/s/AKfycbzttiXyuagTRdrZN7MJQdZBBoiExRHQMwNJZDXFUvFfh18Xb-H5VD3PsZmDW_WvS45y/exec"
 
     fetch(url, {
         method: 'POST',
@@ -26,7 +26,7 @@ function addGS(){
             'Content-Type': 'application/json'
         },
         redirect: 'follow',
-        body: JSON.stringify({name: "John"})
+        body: JSON.stringify({first name:"Linda",telephone:"+8-053-151-888",last name:"Smith"})
     });
 
 
